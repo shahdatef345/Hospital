@@ -1,0 +1,21 @@
+﻿<h1> Complete Appointment with @Model.Name</h1>
+<form action="/Booking/Savenew" method="post">
+    <input type="hidden" name="drname" value="@Model.Name" />
+
+    <div class="form">
+        <label for="patientName">Patient Name:</label><br />
+        <input type="text" id="patientName" name="patientName" required>
+    </div>
+
+    <div class="form-group">
+        <label for="appointmentDate">Appointment Date:</label><br />
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+    </div>
+
+    <div class="form-group">
+        <label for="appointmentTime">Appointment Time:</label><br />
+        <input type="time" id="appointmentTime" name="appointmentTime" required>
+    </div>
+    <br /><br />
+    <button type="submit">Complete Appointment</button>
+</form>

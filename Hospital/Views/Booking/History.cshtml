@@ -1,0 +1,25 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">PatientName:</th>
+            <th scope="col">AppointmentDate</th>
+            <th scope="col">AppointmentTime</th>
+            <th scope="col">Doctor Name:</th>
+
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model)
+        {
+            <tr>
+                <th>@item.Id</th>
+                <th>@item.PatientName</th>
+                <th>@item.AppointmentDate</th>
+                <th>@item.AppointmentTime</th>
+                <th>@item.DoctorName</th>
+            </tr>
+        }
+
+    </tbody>
+</table>
